@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSExpert Max - BlinkToPlay</title>
+  <style>
+    body {
+      background-color: #000000;
+    }
+
+    .container {
+      padding: 20px 50px;
+    }
+    
+    video {
+      width: 80%;
+      margin-top: 10px;
+    }
+
+    #init, video {
+      display: block;
+      margin: 0 auto;
+    }
+
+    button {
+      border: none;
+      font-family: "Roboto", sans-serif;
+      padding: 10px;
+      outline: none;
+      border-radius: 4px;
+    }
+
+    #init:enabled {      
+      cursor: pointer;
+      opacity: 1;
+      background-color: rgb(116, 121, 118);
+      color: #ffffff;
+    }
+
+    #init:disabled {      
+      cursor: default;
+      opacity: .4;
+      background-color: rgb(155, 158, 156);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-childs">
+      <div class="button-container">
+        <div>
+          <button type="button" disabled id="init">Initialize Blick Recognition</button>
+          <output id="status"></output>
+        </div>
+      </div>
+      <video id="video" src="/assets/video.mp4" controls></video>
+    </div>
+  </div>
+
+  <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
