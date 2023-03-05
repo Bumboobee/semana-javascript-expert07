@@ -6,7 +6,7 @@ import View from "./view.js";
 
 async function getWorker() {
   if (supportsWorkerType()) {
-    console.log("initializing esm workers");
+    console.warn("initializing esm workers");
     const worker = new Worker("./src/worker.js", { type: "module" });
     return worker;
   }
@@ -37,24 +37,28 @@ async function getWorker() {
     //  vai ser sobreescrito pela controller
     onmessage(msg) {},
   };
-  console.log("loading tf model...");
+  console.warn("loading tf model...");
   await service.loadModel();
-  console.log("tf model loaded!");
+  console.warn("tf model loaded!");
 
   setTimeout(() => worker.onmessage({ data: "READY" }), 600);
   return workerMock;
 }
 
+const view = new View()
+const [rootPath] = window.location.href.split("/pages/");
+this.view.setVideoSrc(videoUrl)
+
 const worker = await getWorker();
 
 const camera = await Camera.init();
-const [rootPath] = window.location.href.split("/pages/");
+// console.log('rootpath', rootPath)
 const factory = {
   async initialize() {
     return Controller.initialize({
       view: new View(),
       worker,
-      camera,
+      camera
     });
   },
 };

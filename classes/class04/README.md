@@ -11,6 +11,9 @@ Marque esse projeto com uma estrela 🌟
 
 - Este projeto foi criado usando Node.js v19.6
 
+## Live Demo 
+- Quer ver como ficou? [clique aqui para acessar o projeto final 🐣](https://bumboobee.github.io/semana-javascript-expert07/classes/class04/)
+
 ## Running
 
 - Execute `npm ci` para restaurar os pacotes

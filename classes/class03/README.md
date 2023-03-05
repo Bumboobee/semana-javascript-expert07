@@ -7,6 +7,9 @@ Marque esse projeto com uma estrela 🌟
 ## Preview
 <img width=100% src="./assets/demo-template-lg.gif">
 
+## Live Demo 
+- Quer ver como ficou? [clique aqui para acessar o projeto aula 03 🐣](https://bumboobee.github.io/semana-javascript-expert07/classes/class03/)
+
 ## Pre-reqs
 
 - Este projeto foi criado usando Node.js v19.6
@@ -18,21 +21,22 @@ Marque esse projeto com uma estrela 🌟
 
 ## Checklist Features
 - Titles List
-  - [] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
-  - [] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
-  - [] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
-  - [] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
-  - [] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
+  - [x] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
+  - [x] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
+  - [x] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
+  - [x] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
+  - [x] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
   - [] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
 
 - Video Player
-  - [] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
-  - [] - Todo processamento de Machine Learning deve ser feito via Web worker
+  - [x] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
+  - [x] - Todo processamento de Machine Learning deve ser feito via Web worker
 
 ### Desafios
 - [] - Aula 01 - Diferenciar piscada de olhos entre olho direito e esquerdo e atualizar log para mostrar qual olho que piscou.
-- [] - Aula 02 - Reconhecer gestos de mãos individuais e printar no log
-- [] - Aula 03 - A definir
+- [x] - Aula 02 - Reconhecer gestos de mãos individuais e printar no log (mostra swal 🤙)
+- [x] - Aula 03 - Corrigir z-index dos elementos 
+- [x] - Aula 03 - Gesto para parar eventos 🤟
 - [] - Aula 04 - A definir
 
 ### Considerações
